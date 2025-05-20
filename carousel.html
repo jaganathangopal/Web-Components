@@ -1,0 +1,58 @@
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+<!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="/images/PHOTO.JPG" class="rounded-lg w-52" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/PHOTO.JPG" class="rounded-lg w-52" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/PHOTO.JPG" class="rounded-lg w-52" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/PHOTO.JPG" class="rounded-lg w-52" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/PHOTO.JPG" class="rounded-lg w-52" />
+      </div>
+      <div class="swiper-slide">
+        <img src="/images/PHOTO.JPG" class="rounded-lg w-52" />
+      </div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+
+  <script>
+    const swiper = new Swiper(".mySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 5,
+      },
+    },
+  });
+  </script>
